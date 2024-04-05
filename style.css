@@ -9,12 +9,12 @@
 }
 
 @font-face {
-  font-family: 'e-Ukraine';
+  font-family: e-Ukraine;
+  src: url(./font/e-Ukraine-UltraLight.otf);
   src: url(./font//e-Ukraine-Bold.otf);
   src: url(./font/e-Ukraine-Light.otf);
   src: url(./font/e-Ukraine-Medium.otf);
   src: url(./font/e-Ukraine-Regular.otf);
-  src: url(./font/e-Ukraine-UltraLight.otf);
 }
 
 
@@ -47,7 +47,7 @@ h1 {
   }
   
   h3 {
-    font-family: 'e-Ukraine';
+    font-family: e-Ukraine;;
     font-size: 2.5rem; /* 40px */
     font-weight: 700; 
     line-height: 56px;
@@ -62,7 +62,7 @@ h1 {
   }
   
   .large_text, ul {
-    font-family: 'e-Ukraine';
+    font-family: e-Ukraine;;
     font-size: 2rem; /* 32px */
     font-weight: 400; 
     line-height: 48px;
@@ -77,16 +77,16 @@ h1 {
   }
   
  button {
-    font-family: 'e-Ukraine';
+    font-family: e-Ukraine;
     font-size: 1rem; /* 16px */
-    font-weight: 700; 
+    font-weight: bolder; 
     text-transform: uppercase;
     line-height: 20px;
     letter-spacing: 0.07;
   }
   
 p {
-    font-family: 'e-Ukraine';
+    font-family: e-Ukraine;;
     font-size: 1.5rem; /* 24px */
     font-weight: 300; 
     line-height: 40px;
@@ -119,9 +119,7 @@ header {
     position: fixed;
     z-index: 1000; /* Ensure the header is above other content */ 
 
-    border-bottom: 2px solid var(--white);
-
-   
+    border-bottom: 2px solid var(--white); 
 }
 
 header > * {
@@ -668,9 +666,7 @@ margin: 0.1px;
 
 
 @media (min-width: 319px) and (max-width: 720px) {
-  body {
-    background-color: lightcyan;
-  }
+  
 
   h1 {
     font-family: 'e-Ukraine Head';
@@ -745,9 +741,21 @@ div {
 }
 
 header {
+  background: var(--Gradient);
+  height: 80px;
+  width: 100%;
+  box-sizing: border-box; /* This makes sure padding and borders are included within the 100% width */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
   padding-right: 24px;
-  padding-left: 24px;   
+  padding-left: 24px;
+  
+  border-bottom: 2px solid var(--white);
 }
+
 
 #logo_text {
   padding-top: 20px;
