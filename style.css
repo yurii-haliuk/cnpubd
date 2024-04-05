@@ -1,7 +1,22 @@
-* { 
-    font-family: 'e-Ukraine', Arial, sans-serif; 
-    font-family: 'e-Ukraine Head', Arial, sans-serif; 
+@font-face {
+  font-family: 'e-Ukraine Head';
+  src: url(./font//e-UkraineHead-Thin.otf);
+  src: url(./font/e-UkraineHead-Light.otf);
+  src: url(./font/e-UkraineHead-LOGO.otf);
+  src: url(./font/e-UkraineHead-Medium.otf);
+  src: url(./font/e-UkraineHead-Regular.otf);
+  src: url(./font/e-UkraineHead-Bold.otf);
 }
+
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url(./font//e-Ukraine-Bold.otf);
+  src: url(./font/e-Ukraine-Light.otf);
+  src: url(./font/e-Ukraine-Medium.otf);
+  src: url(./font/e-Ukraine-Regular.otf);
+  src: url(./font/e-Ukraine-UltraLight.otf);
+}
+
 
 :root {
     --black: rgba(28, 27, 31, 1);
@@ -32,7 +47,7 @@ h1 {
   }
   
   h3 {
-    font-family: e-Ukraine;
+    font-family: 'e-Ukraine';
     font-size: 2.5rem; /* 40px */
     font-weight: 700; 
     line-height: 56px;
@@ -47,7 +62,7 @@ h1 {
   }
   
   .large_text, ul {
-    font-family: e-Ukraine;
+    font-family: 'e-Ukraine';
     font-size: 2rem; /* 32px */
     font-weight: 400; 
     line-height: 48px;
@@ -57,12 +72,12 @@ h1 {
 .small_text {
     font-family: e-Ukraine;
     font-size: 1.125rem; /* 18px */
-    font-weight: 300; 
+    font-weight: 100; 
     line-height: 28px;
   }
   
  button {
-    font-family: e-Ukraine;
+    font-family: 'e-Ukraine';
     font-size: 1rem; /* 16px */
     font-weight: 700; 
     text-transform: uppercase;
@@ -71,7 +86,7 @@ h1 {
   }
   
 p {
-    font-family: e-Ukraine;
+    font-family: 'e-Ukraine';
     font-size: 1.5rem; /* 24px */
     font-weight: 300; 
     line-height: 40px;
