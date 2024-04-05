@@ -1,0 +1,916 @@
+* { 
+    font-family: 'e-Ukraine', Arial, sans-serif; 
+    font-family: 'e-Ukraine Head', Arial, sans-serif; 
+}
+
+:root {
+    --black: rgba(28, 27, 31, 1);
+    --white: rgba(255, 255, 255, 1);
+    --blue: rgba(31, 75, 189, 1);
+    --teal: rgba(73, 170, 201, 1);
+    --green: rgba(8, 95, 32, 1);
+    --light-blue: rgba(218, 233, 247, 1);
+    --purple: rgba(53, 21, 148, 1);
+    --white-alpha10: rgba(255, 255, 255, 0.1);
+    --white-alpha20: rgba(255, 255, 255, 0.2);
+    --shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    --Gradient: linear-gradient(270deg, #49AAC9 1.65%, #1F4BBD 102.49%);
+    background-color: #F6F9FF;
+}
+
+h1 {
+    font-family: 'e-Ukraine Head';
+    font-size: 5.5rem; /* 88px */
+    font-weight: 700; 
+    color: var(--blue);
+  }
+  
+  h2 {
+    font-family: 'e-Ukraine Head';
+    font-size: 3.5rem; /* 64px */
+    font-weight: 400; 
+  }
+  
+  h3 {
+    font-family: e-Ukraine;
+    font-size: 2.5rem; /* 40px */
+    font-weight: 700; 
+    line-height: 56px;
+  }
+  
+  h4 {
+    font-family: 'e-Ukraine Head';
+    font-size: 2rem; /* 32px */
+    font-weight: 700; 
+    line-height: 48px;
+    margin: 0px;
+  }
+  
+  .large_text, ul {
+    font-family: e-Ukraine;
+    font-size: 2rem; /* 32px */
+    font-weight: 400; 
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+  
+.small_text {
+    font-family: e-Ukraine;
+    font-size: 1.125rem; /* 18px */
+    font-weight: 300; 
+    line-height: 28px;
+  }
+  
+ button {
+    font-family: e-Ukraine;
+    font-size: 1rem; /* 16px */
+    font-weight: 700; 
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 0.07;
+  }
+  
+p {
+    font-family: e-Ukraine;
+    font-size: 1.5rem; /* 24px */
+    font-weight: 300; 
+    line-height: 40px;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+/* 🧢 ––––––––––––––––––––––––––––––––––––––––––––Header Settings */
+
+div {
+    box-sizing: border-box;
+  }
+
+header {
+    background: var(--Gradient);
+    height: 80px;
+    width: 94%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-right: 56px;
+    padding-left: 56px;  
+    flex: 1;
+    
+    position: fixed;
+    z-index: 1000; /* Ensure the header is above other content */ 
+
+    border-bottom: 2px solid var(--white);
+
+   
+}
+
+header > * {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+#nav_left {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    
+}
+
+#logo_symbol {
+    height: 48px;
+}
+
+#logo_text {
+    padding-top: 8px;
+    margin: 0px;
+    height: 48px;
+    align-self: center;
+
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#name_subtitle {
+    color: #95B1FD;
+    font-family: e-Ukraine;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 10%;
+    letter-spacing: 0.7px;
+    
+}
+
+#name_title {
+    color: var(--White, #FFF);
+    font-family: "e-Ukraine Head";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10%;
+}
+
+#header_button {
+    color: var(--black);
+    background-color: var(--white);
+    border: 0px;
+    border-radius: 40px;
+
+    display: inline-flex;
+    padding: 0px 48px 0px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    height: 48px;   
+    min-width: 272px;
+    float: right;
+}   
+
+#header_menu {
+    height: 40px;
+    width: 40px;
+    flex-shrink: 0;
+}
+
+section {
+    padding: 56px 72px;
+}
+
+
+/* 🦸 ––––––––––––––––––––––––––––––––––––––––––––Main Section */
+
+#main_section {
+  position: relative;
+}
+
+#main_section > img {
+  position: absolute;
+  height: 80vh;
+  
+  right: 0; 
+  top: 0; 
+  z-index: -100;
+}
+
+#white_gradient {
+  position: absolute;
+  height: 100vh;
+  width: 80%;
+  
+  left: 0; 
+  top: 0; 
+  z-index: -50;
+
+  background: linear-gradient(90deg, #FFF 64%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+#main_section > h1 {
+  max-width: 880px;
+  margin-top: 120px;
+  margin-left: 0;
+
+  background: var(--Gradient, linear-gradient(270deg, #49AAC9 1.65%, #1F4BBD 102.49%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#main_section > ul 
+{
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#main_section span {
+  color: var(--blue);
+}
+
+/* 📜 ––––––––––––––––––––––––––––––––––––––––––––Services Section */
+
+#services_section {
+    height: fit-content;
+    background: var(--Gradient);
+    color: var(--white);
+}
+
+#services_section > * {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+#services_section .cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+#services_section .card {
+  background-color: var(--white);
+  color: var(--black);
+  flex-basis: calc(33.333% - 20px); /* Adjust the spacing between the services */
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 400px;
+  flex: 1;
+  min-width: 320px;
+}
+
+#services_section .card button {
+  color: var(--blue);
+  background-color: var(--white);
+  border: none;
+  align-self: flex-start;
+  padding: 0px;
+}
+
+#services_section .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+
+#services_section .buttons > button {
+  color: var(--white);
+  background-color: var(--white-alpha10);
+  border: 2px solid;
+  border-color: var(--white-alpha20);
+  border-radius: 40px;
+  padding: 14px 40px;
+}
+
+.card-icon img {
+  height: 32px;
+  width: 32px;
+  padding: 8px;
+  background-color: var(--blue);
+  border-radius: 8px;
+  flex: 0;
+}
+
+#legal_icon img { background-color: var(--green);}
+#psy_icon img { background-color: var(--teal);}
+
+
+
+
+/* 🧠––––––––––––––––––––––––––––––––––––––––––––Centr */
+
+#help_section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+
+#help_section > * {
+  margin-top: 0;
+  margin-bottom: 0px;
+  margin-left: 0;
+  box-sizing: border-box;
+}
+
+#help_section h2 {
+  color: var(--blue);
+  margin-bottom: 0px;
+}
+
+#help_section button {
+  color: var(--blue);
+  background-color: var(--light-blue);
+  border: 0px;
+  border-radius: 40px;
+  padding: 14px 40px;
+}
+
+.tile_block {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.tile_block div {
+  display: flex;
+  min-width: 560px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  flex: 1 0 0;
+}
+
+.tile_block img {
+  width: 722px;
+  height: 480px;
+  max-width: 722px;
+}
+
+#help_section h3, p {
+  margin: 0px;
+  margin-bottom: 24px;
+}
+
+#help_section > .tile_block > img[alt="training"] {
+  order: 1;
+}
+
+
+
+
+/* 👨‍🏫––––––––––––––––––––––––––––––––––––––––––––stats */
+
+#stats_section {
+    background: var(--Gradient);
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--white);
+}
+
+#stats_section > * {
+  margin-top: 0;
+  margin-left: 0;
+  box-sizing: border-box;
+}
+
+#stats_section h2 {
+  margin-bottom: 16px;
+}
+
+#stats_section .cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+.stat_cards {
+  display: flex;
+  min-width: 420px;
+  height: fill;
+  padding: 46px 51px 197px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1 0 0;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+#stat1 { 
+  min-width: 872px;
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+
+  padding: 40px;
+
+  background-image: url('./assets / images/hands.png'); /* Replace with your image path */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: right bottom; /* Aligns the image to the right, vertically centered */
+  background-size: 20rem; /* Adjusts the size of your background image to fit within the container */
+}
+
+#stat1 h3 {
+  font-family: "e-Ukraine Head";
+  font-size: 160px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin: 0px;
+
+  background: var(--Gradient, linear-gradient(270deg, #49AAC9 1.65%, #1F4BBD 102.49%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat_cards h3 {
+  font-family: "e-Ukraine Head";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+}
+
+.stat_cards p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ #stat2 h3 { color: var(--purple); }
+ #stat3 h3 { color: var(--blue); }
+ #stat4 h3 { color: var(--teal); }
+ #stat5 h3 { color: var(--green); }
+
+/* ––––––––––––––––––––––––––––––––––––––––––––About */
+
+#about_section .cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 24px;
+  padding-bottom: 24px;
+} 
+
+#about_section .cards > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 560px;
+  flex: 2;
+  max-height: 480px;
+}
+
+#about_section #card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+
+  flex: 1;
+
+  background: var(--Gradient, linear-gradient(270deg, #49AAC9 1.65%, #1F4BBD 102.49%));
+  color: var(--white);
+  padding: 32px;
+  min-width: 400px;
+}
+
+#about_section #card2 {
+  display: flex;
+  padding: 32px 32px 35px 32px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  background: var(--light-blue);
+  min-width: 320px;
+}
+
+#about_section .cards img {
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––Contacts */
+
+#contact_section h2 {
+  background: var(--Gradient, linear-gradient(270deg, #49AAC9 1.65%, #1F4BBD 102.49%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-top: 0px;
+  padding-top: 8px;
+}
+
+
+#contact_section .cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 24px;
+  padding-bottom: 24px;
+} 
+
+#contact_section .cards > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 560px;
+  flex: 2;
+  max-height: 480px;
+  background-color: var(--white);
+}
+
+#contact_section .card {
+  background-color: var(--white);
+  color: var(--black);
+  flex-basis: calc(33.333% - 20px); /* Adjust the spacing between the services */
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 400px;
+  flex: 1;
+  min-width: 340px;
+}
+
+#phones {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 24px;
+}
+
+#phones * {
+  margin: 0px;
+  padding: 4px;
+}
+
+ #direction_section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+  align-items: start;
+ }
+
+
+ #direction_section h2 {
+  background: var(--Gradient, linear-gradient(270deg, #49AAC9 1.65%, #1F4BBD 102.49%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-top: 0px;
+  padding-top: 8px;
+}
+
+#direction_section > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 560px;
+  flex: 2;
+}
+
+#direction_section img {
+  object-fit:scale-down;
+  object-position: center;
+}
+
+#direction_section button {
+  color: var(--blue);
+  background-color: var(--light-blue);
+  border: 0px;
+  border-radius: 40px;
+  padding: 14px 40px;
+  width: fit-content;
+  margin-bottom: 24px;
+}
+
+#trams div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+#trams div > * {
+margin: 0.1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 319px) and (max-width: 720px) {
+  body {
+    background-color: lightcyan;
+  }
+
+  h1 {
+    font-family: 'e-Ukraine Head';
+    font-size: 40px; /* 88px */
+    font-weight: 700; 
+    color: var(--blue);
+  }
+  
+  h2 {
+    font-family: 'e-Ukraine Head';
+    font-size: 28px;
+    font-weight: 400; 
+  }
+  
+  h3 {
+    font-family: e-Ukraine;
+    font-size: 2rem; /* 40px */
+    font-weight: 700; 
+    line-height: 56px;
+  }
+  
+  h4 {
+    font-family: 'e-Ukraine Head';
+    font-size: 24px;
+    font-weight: 700; 
+    line-height: 48px;
+    margin: 0px;
+  }
+  
+  .large_text, ul {
+    font-family: e-Ukraine;
+    font-size: 18px; /* 32px */
+    font-weight: 400; 
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  
+.small_text {
+    font-family: e-Ukraine;
+    font-size: 0,75rem; /* 18px */
+    font-weight: 300; 
+    line-height: 28px;
+  }
+  
+ button {
+    font-family: e-Ukraine;
+    font-size: 1rem; /* 16px */
+    font-weight: 700; 
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 0.07;
+  }
+  
+p {
+    font-family: e-Ukraine;
+    font-size: 1rem; /* 24px */
+    font-weight: 300; 
+    line-height: 40px;
+  }
+
+  section {
+    padding: 32px 16px;
+}
+
+
+
+
+/* 🧢 ––––––––––––––––––––––––––––––––––––––––––––Header Settings */
+
+div {
+  box-sizing: border-box;
+}
+
+header {
+  padding-right: 24px;
+  padding-left: 24px;   
+}
+
+#logo_text {
+  padding-top: 20px;
+  margin: 0px;
+  height: 48px;
+  align-self: center;
+
+}
+
+#logo {
+  gap: 16px;
+}
+
+#name_subtitle {
+  display: none;
+}
+
+#name_title {
+  font-size: 32px;
+}
+
+#header_button {
+display: none;
+}   
+
+
+
+
+/* 🦸 ––––––––––––––––––––––––––––––––––––––––––––Main Section */
+
+
+#main_section > img {
+  display: none;
+}
+
+#main_section > h1 {
+  margin-top: 88px;
+  margin-left: 0;
+}
+
+
+/* 🧠––––––––––––––––––––––––––––––––––––––––––––Centr */
+
+#help_section {
+  gap: 32px;
+}
+
+
+#help_section button {
+  color: var(--blue);
+  background-color: var(--light-blue);
+  border: 0px;
+  border-radius: 40px;
+  padding: 14px 40px;
+}
+
+.tile_block {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.tile_block img {
+  width: 100%;
+  height: auto;
+}
+
+#help_section p {
+  line-height: 140%;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+#help_section h3 {
+  line-height: 140%;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+
+.tile_block > div  {
+  gap: 4px;
+}
+
+
+
+/* 👨‍🏫––––––––––––––––––––––––––––––––––––––––––––stats */
+
+
+#stats_section .cards {
+flex-direction: column;
+}
+
+.stat_cards {
+min-width: 320px;
+height: fill;
+padding: 46px 51px 48px 40px;
+gap: 8px;
+flex: 1;
+}
+
+#stat1 { 
+min-width: auto;
+flex: 1 0 0;
+display: flex;
+flex-direction: column;
+align-self: stretch;
+
+padding: 40px;
+
+}
+
+#stat1 h3 {
+font-size: 72px;
+}
+
+.stat_cards p {
+margin: 0px;
+padding: 0px;
+}
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––About */
+
+#about_section .cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 24px;
+  padding-bottom: 24px;
+} 
+
+#about_section .cards > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  max-height: 480px;
+}
+
+#about_section #card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+
+  flex: 1;
+
+  background: var(--Gradient, linear-gradient(270deg, #49AAC9 1.65%, #1F4BBD 102.49%));
+  color: var(--white);
+  padding: 32px;
+  min-width: 400px;
+}
+
+#about_section #card2 {
+  display: flex;
+  padding: 32px 32px 35px 32px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  background: var(--light-blue);
+  min-width: 100%;
+}
+
+#about_section .cards img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+
+
+}
