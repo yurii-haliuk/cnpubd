@@ -801,6 +801,11 @@ display: none;
 
 #help_section {
   gap: 32px;
+  min-width: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
 }
 
 
@@ -819,6 +824,16 @@ display: none;
   gap: 40px;
   align-self: stretch;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+.tile_block div {
+  display: flex;
+  min-width: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  flex: 1 0 0;
 }
 
 .tile_block img {
@@ -855,7 +870,7 @@ flex-direction: column;
 .stat_cards {
 min-width: 320px;
 height: fill;
-padding: 46px 51px 48px 40px;
+padding: 24px 40px 48px 40px;
 gap: 8px;
 flex: 1;
 }
@@ -868,11 +883,12 @@ flex-direction: column;
 align-self: stretch;
 
 padding: 40px;
+background-size: 10rem; /* Adjusts the size of your background image to fit within the container */
 
 }
 
 #stat1 h3 {
-font-size: 72px;
+font-size: 56px;
 }
 
 .stat_cards p {
@@ -898,6 +914,7 @@ padding: 0px;
   flex-wrap: wrap;
   flex-direction: column;
   flex-basis: 100%;
+  max-width: 100%;
   flex: 2;
   max-height: 480px;
 }
@@ -914,7 +931,7 @@ padding: 0px;
   background: var(--Gradient, linear-gradient(270deg, #49AAC9 1.65%, #1F4BBD 102.49%));
   color: var(--white);
   padding: 32px;
-  min-width: 400px;
+  min-width: 100%;
 }
 
 #about_section #card2 {
@@ -935,5 +952,61 @@ padding: 0px;
 }
 
 
+
+
+
+#direction_section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+  align-items: start;
+ }
+
+
+ #direction_section h2 {
+  background: var(--Gradient, linear-gradient(270deg, #49AAC9 1.65%, #1F4BBD 102.49%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-top: 0px;
+  padding-top: 8px;
+}
+
+#direction_section h4 { font-size: 20px; }
+
+#direction_section > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 560px;
+  flex: 2;
+}
+
+#direction_section img {
+  max-width: 100%;
+}
+
+#trams h4 {
+  margin-bottom: 16px;
+}
+#trams  {
+  gap: 16px;
+  align-items: flex-start;
+  padding-bottom: 0px;
+  margin-top: 16px;
+}
+
+#trams div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  padding-bottom: 8px;
+}
+
+#trams div > * {
+margin: 0px;
+}
 
 }
