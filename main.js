@@ -60,24 +60,51 @@ function adjustTextForScreenSize() {
     });
   });
 
+
+
+
   // Access the video element
 var video = document.querySelector('video');
 
 // Set the playback rate: 0.5 is half the normal speed, 1 is normal speed, 2 is double speed, etc.
 video.playbackRate = 0.0625;
 
-  // Get references to the elements
-  const slider = document.getElementById('slider');
-  const quantity = document.getElementById('quantity');
-
-  // Add an event listener to the slider
-  slider.addEventListener('input', function() {
-    // Update the text field with the slider's value
-    quantity.value = slider.value;
+document.addEventListener('DOMContentLoaded', (event) => {
+    const video = document.querySelector('video');
+    video.play().catch(error => {
+      // Autoplay was prevented.
+      // Show a play button so the user can start playback manually.
+    });
   });
+  
 
-  // Optionally, synchronize changes from the quantity input back to the slider
-  quantity.addEventListener('input', function() {
-    slider.value = quantity.value;
-  });
+
+
+
+
+
+
+// Function to synchronize the slider and the text field
+function synchronizeValues(source, target) {
+    target.value = source.value;
+}
+
+// Get references to the elements
+const slider = document.getElementById('slider');
+const quantity = document.getElementById('quantity');
+
+// Synchronize from slider to text field
+slider.addEventListener('input', function() {
+    synchronizeValues(slider, quantity);
+});
+
+// Synchronize from text field to slider
+quantity.addEventListener('input', function() {
+    synchronizeValues(quantity, slider);
+});
+
+// Initial synchronization in case the default values are set dynamically or change
+document.addEventListener('DOMContentLoaded', function() {
+    synchronizeValues(slider, quantity);
+});
   
