@@ -116,6 +116,7 @@
   input[type="radio"]  {
     margin-top: 24px; /* Align the top of the radio button with the label */
     margin-right: 8px; /* Space between the radio button and the label text */
+    width: 48px;
   }
 
 
@@ -200,3 +201,29 @@
   a:hover {
     text-decoration: none; /* Remove underline on hover */
   }
+
+
+
+@media (min-width: 319px) and (max-width: 720px) {
+    .video-background video {
+        display: none; 
+    }
+
+    .form-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%; /* Adjust based on desired width, or set a fixed width */
+        height: auto; /* Height based on content, or set a fixed height */
+        padding: 32px;
+        box-sizing: border-box;
+        transform: translate(-50%, -50%); /* Center the form */
+        overflow-y: auto; /* Allows the form to be scrollable */
+    
+        background: var(--light-blue); /* Semi-transparent white background */
+
+        z-index: 1; /* Ensure the form is above the background */
+        max-height: 100vh; 
+        overflow-y: auto; /* Keeps this property to allow scrolling */
+        }
+}
