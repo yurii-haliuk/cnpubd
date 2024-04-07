@@ -1,0 +1,205 @@
+/* 📹 VIDEO BACKGROUND------------------------- */
+
+.video-background {
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+    background: url('fallback_image.jpg') no-repeat center center;
+    background-size: cover;
+    }
+
+    .video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1; 
+}
+  
+
+/* 📝 FORM CONTAINTER------------------------- */
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%; /* Adjust based on desired width, or set a fixed width */
+    max-width: 600px; /* Maximum width of the form */
+    height: auto; /* Height based on content, or set a fixed height */
+    padding: 32px;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%); /* Center the form */
+    overflow-y: auto; /* Allows the form to be scrollable */
+
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    backdrop-filter: blur(10px);
+    border-radius: 8px; /* Optional: Adds rounded corners to the form container */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
+    z-index: 1; /* Ensure the form is above the background */
+    max-height: 95vh; 
+    overflow-y: auto; /* Keeps this property to allow scrolling */
+    }
+  
+    .form-container form h2 {
+    margin-top: 0;
+    color: var(--blue);
+    font-size: 32px;
+}
+  
+/* 📝 TEXT INPUTS------------------------- */
+
+.form-container form input,
+  .form-container form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    padding-right: 0px;
+    margin-bottom: 20px;
+    background-color: var(--white);
+    border: 1px none;
+    border-radius: 5px;
+  }
+
+    textarea {
+    height: 80px;
+    resize: none;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+
+        font-family: e-Ukraine;
+        font-size: 16px;
+        font-weight: 300; 
+        line-height: 20px;
+        }
+
+    .form-container label {
+        padding-bottom: 8px;
+    }
+    
+    input, textarea {
+        font-family: e-Ukraine;
+        font-size: 14px;
+        font-weight: 300; 
+        line-height: 20px;
+}
+
+/* 📻 RADIO ------------------------- */
+
+  fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  fieldset legend {
+    padding-bottom: 16px;
+    font-family: 'e-Ukraine Head';
+    font-size: 18px;
+    font-weight: 700; 
+    line-height: 20px;
+    color: var(--blue);
+  }
+  
+  input[type="radio"]  {
+    margin-top: 24px; /* Align the top of the radio button with the label */
+    margin-right: 8px; /* Space between the radio button and the label text */
+  }
+
+
+  fieldset label {
+    display: flex;
+    align-items: center; /* This will vertically align the radio buttons with the text */
+    margin-bottom: 0px; 
+    cursor: pointer;
+    height: 28px;
+  }
+
+
+
+/* 🎚️ SLIDER------------------------- */
+
+  input[type="range"] {
+    width: 100%;
+    margin: 8px 0;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+  } 
+
+  #number > * {
+    margin: 4px;
+  }
+
+  #number {
+    margin-bottom: 20px;
+  }
+
+
+/* 🖲️ BUTTON------------------------- */
+  
+.form-container form button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+    }
+  
+    .form-container form button:hover {
+    background-color: #2099d5;
+}  
+
+.form-container form  a {
+    box-sizing: border-box;
+    background-color: #fffbfb00;
+    color: var(--blue);
+    text-decoration: none;
+    font-family: e-Ukraine;
+    padding: 24px;
+    margin-top: 4px;
+
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 40px;
+   
+    text-align: center; /* To center the text */
+    cursor: pointer;
+    text-decoration: none; /* Remove the underline */
+
+}
+
+  #back a:hover {
+    text-decoration: none; /* Remove underline on hover */
+  }
