@@ -76,7 +76,7 @@ h1 {
     line-height: 28px;
   }
   
- button {
+ button, #back_button {
     font-family: e-Ukraine;
     font-size: 1rem; /* 16px */
     font-weight: bolder; 
@@ -390,7 +390,7 @@ section {
   margin-bottom: 24px;
 }
 
-#help_section > .tile_block > img[alt="training"] {
+#help_section > .tile_block > img[alt="Тренування"] {
   order: 1;
 }
 

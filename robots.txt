@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /settings/
+Disallow: /private/
+
+Allow: /
+
+Sitemap: https://yurii-haliuk.github.io/cnpubd/sitemap.xml
