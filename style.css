@@ -1168,3 +1168,7 @@ html {
 :target {
   scroll-margin-top: 80px;
 }
+
+#error_section {
+  padding-top: 80px;
+}
